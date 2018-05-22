@@ -1,6 +1,5 @@
 package com.bambootang.sample;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
@@ -16,21 +15,21 @@ import java.util.HashMap;
 
 public class Sample1Activity extends AppCompatActivity {
 
-    //    int[] imgIds = {R.drawable.img_001,
-//            R.drawable.img_002,
-//            R.drawable.img_003,
-//            R.drawable.img_004,
-//            R.drawable.img_005,
-//            R.drawable.img_006,
-//            R.drawable.img_007
-//    };
-    int[] imgIds = {
+        int[] imgIds = {R.drawable.img_001,
+          R.drawable.img_002,
+            R.drawable.img_003,
+            R.drawable.img_004,
+            R.drawable.img_005,
+            R.drawable.img_006,
+            R.drawable.img_007
+    };
+   /* int[] imgIds = {
             Color.parseColor("#ffffffff"),
             Color.parseColor("#ffffffff"),
             Color.parseColor("#ffffffff"),
             Color.parseColor("#ffffffff"),
             Color.parseColor("#ffffffff")
-    };
+    };*/
 
     BambooFlowViewPager fvp_pagers;
 

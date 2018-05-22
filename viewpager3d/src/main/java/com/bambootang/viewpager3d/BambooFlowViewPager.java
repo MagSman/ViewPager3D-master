@@ -54,7 +54,6 @@ public class BambooFlowViewPager extends ViewPager {
         maxRotationY = a.getFloat(R.styleable.BambooFlowViewPager_maxRotationY, maxRotationY);
         a.recycle();
         init();
-
     }
 
     protected void init() {

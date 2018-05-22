@@ -18,6 +18,7 @@ public class FlowTransformer implements ViewPager.PageTransformer {
      * View的默认透视视距
      */
     private static final double DEFAULT_DEEP_DISTANCE = 576;
+    //private static final double DEFAULT_DEEP_DISTANCE = 1900;
 
     protected double AO = DEFAULT_DEEP_DISTANCE;
 
@@ -31,7 +32,7 @@ public class FlowTransformer implements ViewPager.PageTransformer {
     /**
      * 是否旋转
      */
-    protected boolean doRotationY = true;
+    protected boolean doRotationY = false;
 
     private int pagerOrder = 0;
 
@@ -92,6 +93,11 @@ public class FlowTransformer implements ViewPager.PageTransformer {
     }
 
     public void transformPage(View page, float position) {
+        float scale = 0.25f;
+        float scaleValue = 1 - Math.abs(position) * scale;
+        page.setAlpha(scaleValue);
+
+
         checkViewPagerDrawOrder();
         float paddingLeft = viewPager.getPaddingLeft();
         int pageWidth = page.getWidth();
